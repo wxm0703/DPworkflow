@@ -1,0 +1,17 @@
+ SYSTEM = Pd3C12S12
+ ISTART = 0; ICHARG = 2
+ ENCUT = 600
+ PREC = Accurate
+ ISMEAR = -5
+ ALGO = Normal; LWAVE = .False.; LCHARG = .False. 
+ EDIFF = 1.0E-06
+ ISYM = 0
+
+ GGA = PE
+ IVDW = 11
+ VDW_RADIUS = 50.2
+ VDW_CNRADIUS = 20.0
+ VDW_S8 = 0.722
+ VDW_SR = 1.217
+
+

@@ -1,0 +1,25 @@
+ SYSTEM = Pd12C48S48
+# electronic degrees 
+ #IVDW   =  1 
+ ENCUT = 400                                 
+ LREAL = A                      # real space projection                         
+ PREC = Normal                 # chose Low only after tests
+ EDIFF = 1.0E-5                   # do not use default (too large drift)          
+ ISMEAR = 0; SIGMA = 0.01
+ ALGO = Fast               # recommended for MD (fall back ALGO = Fast)
+ ADDGRID = TRUE     
+ MAXMIX = 40                    # reuse mixer from one MD step to next                                 
+ NELMIN = 4                     # minimum 4 steps per time step, avoid breaking after 2 steps
+ # MD (do little writing to save disc space)        
+ LBLUEOUT = .TRUE.
+ IBRION = 0
+ NSW = 20000
+ LCHARG = .FALSE.; LWAVE = .FALSE.  
+ TEBEG = 298.0; TEEND = 298.0
+ POTIM = 1.0
+ SMASS = 0
+ MDALGO = 2
+ ISIF = 2
+ NBLOCK = 1
+ KBLOCK = 1
+
